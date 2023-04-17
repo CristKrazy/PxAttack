@@ -175,17 +175,7 @@ def clone():
     except:
         pass
             try:
-        r = requests.get("https://www.proxyscan.io/download?type=socks5")
-        f.write(r.content)
-    except:
-        pass
-            try:
         r = requests.get("https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks5.txt")
-        f.write(r.content)
-    except:
-        pass
-            try:
-        r = requests.get("https://www.my-proxy.com/free-socks-5-proxy.html")
         f.write(r.content)
     except:
         pass
@@ -196,11 +186,6 @@ def clone():
         pass
             try:
         r = requests.get("https://github.com/roosterkid/openproxylist/blob/main/SOCKS5_RAW.txt")
-        f.write(r.content)
-    except:
-        pass
-            try:
-        r = requests.get("http://k2ysarchive.xyz/proxy/socks5.txt")
         f.write(r.content)
     except:
         pass
@@ -216,16 +201,6 @@ def clone():
         pass
             try:
         r = requests.get("https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt")
-        f.write(r.content)
-    except:
-        pass
-            try:
-        r = requests.get("https://www.freeproxychecker.com/result/socks5_proxies.txt")
-        f.write(r.content)
-    except:
-        pass
-            try:
-        r = requests.get("http://www.socks24.org/feeds/posts/default")
         f.write(r.content)
     except:
         pass
