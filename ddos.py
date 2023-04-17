@@ -174,47 +174,47 @@ def clone():
         f.write(r.content)
     except:
         pass
-            try:
+    try:
         r = requests.get("https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks5.txt")
         f.write(r.content)
     except:
         pass
-            try:
+    try:
         r = requests.get("https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt")
         f.write(r.content)
     except:
         pass
-            try:
+    try:
         r = requests.get("https://github.com/roosterkid/openproxylist/blob/main/SOCKS5_RAW.txt")
         f.write(r.content)
     except:
         pass
-            try:
+    try:
         r = requests.get("https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt")
         f.write(r.content)
     except:
         pass
-            try:
+    try:
         r = requests.get("http://worm.rip/socks5.txt")
         f.write(r.content)
     except:
         pass
-            try:
+    try:
         r = requests.get("https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/socks5.txt")
         f.write(r.content)
     except:
         pass
-            try:
+    try:
         r = requests.get("https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5")
         f.write(r.content)
     except:
         pass
-            try:
+    try:
         r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt")
         f.write(r.content)
     except:
         pass
-            try:
+    try:
         r = requests.get("https://api.openproxylist.xyz/socks5.txt")
         f.write(r.content)
     except:
