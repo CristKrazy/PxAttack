@@ -175,11 +175,6 @@ def clone():
     except:
         pass
             try:
-        r = requests.get("https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5")
-        f.write(r.content)
-    except:
-        pass
-            try:
         r = requests.get("https://www.proxyscan.io/download?type=socks5")
         f.write(r.content)
     except:
