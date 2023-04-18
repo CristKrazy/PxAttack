@@ -1,2 +1,2 @@
 # Setup command:
-/waiting for next update/
+`waiting for next update`
