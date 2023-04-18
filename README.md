@@ -1,5 +1,5 @@
 # Setup command:
-`waiting for next update`
+`unavailable`
 
 # Usage:
 `invaluable`
