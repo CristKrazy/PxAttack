@@ -1,2 +1,5 @@
 # Setup command:
-|| waiting for next update ||
+`waiting for next update`
+
+# Usage:
+`invaluable`
