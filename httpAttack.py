@@ -61,7 +61,7 @@ def buildblock(size):
 
 def usage():
     print '---------------------------------------------------'
-    print 'USAGE: python proxy-ddos.py <url>'
+    print 'USAGE: python httpAttack.py <url>'
     print '---------------------------------------------------'
 
 def httpcall(url):
