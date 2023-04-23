@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+##!/usr/bin/python3
 #akashblackhat
 import threading
 import random
@@ -170,7 +170,67 @@ strings = "asdfghjklqwertyuiopZXCVBNMQWERTYUIOPASDFGHJKLzxcvbnm1234567890&"
 def clone():
     f = open("socks5.txt", 'wb')
     try:
-        r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt")
+        r = requests.get("https://api.proxyscrape.com/?request=displayproxies&proxytype=socks5&country=all&timeout=1500")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://github.com/roosterkid/openproxylist/blob/main/SOCKS5_RAW.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("http://worm.rip/socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://api.openproxylist.xyz/socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://raw.githubusercontent.com/UptimerBot/proxy-list/main/proxies/socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://www.proxy-list.download/api/v1/get?type=socks5")
         f.write(r.content)
         f.close()
     except:
