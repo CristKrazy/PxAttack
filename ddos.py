@@ -175,11 +175,6 @@ def clone():
     except:
         pass
     try:
-        r = requests.get("https://raw.githubusercontent.com/CristKrazy/proxy/main/proxyVN.txt")
-        f.write(r.content)
-    except:
-        pass
-    try:
         r = requests.get("https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks5.txt")
         f.write(r.content)
     except:
@@ -215,11 +210,6 @@ def clone():
     except:
         pass
     try:
-        r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt")
-        f.write(r.content)
-    except:
-        pass
-    try:
         r = requests.get("https://api.openproxylist.xyz/socks5.txt")
         f.write(r.content)
     except:
@@ -250,7 +240,7 @@ def clone():
         f.close()
     except:
         f.close()
-    print("Nạp đạn thành công")
+    print("Nhận proxy thành công!")
 
 def prevent():
     if '192.168' in ip or '127.0' in ip or '172.16' in ip or 'localhost' in ip :
@@ -298,12 +288,12 @@ def main():
     else:
         th_num = int(th_num)
     #if mode == "get" or mode == "GET":
-    N = str(input("Muốn nạp lại đạn mới ko?(y/n):"))
+    N = str(input("Check lại proxy!(y/enter):"))
     if N == "n" or N =="N":
         pass
     else:
         clone()
-    out_file = str(input("Băng đạn đã mút(socks5.txt):"))
+    out_file = str(input("Đã nhận(socks5.txt):"))
     if out_file == "":
         out_file = "socks5.txt"
     else:
@@ -311,7 +301,7 @@ def main():
     print ("Number Of Socks5 Proxies: %s" %(len(open(out_file).readlines())))
     proxies = open(out_file).readlines()
     time.sleep(0.3)
-    ans = str(input("Kiểm tra lại đạn?(y/n, defualt=y):"))
+    ans = str(input("Kiểm tra lại proxy?(y/enter, defualt=y):"))
     if ans == "n" or ans =="N":
         pass
     else:
