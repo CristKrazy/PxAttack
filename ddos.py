@@ -215,6 +215,11 @@ def clone():
     except:
         pass
     try:
+        r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
         r = requests.get("https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt")
         f.write(r.content)
     except:
