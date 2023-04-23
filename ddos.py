@@ -400,13 +400,13 @@ def check_socks():
 		th.start()
 		thread_list.append(th)
 		time.sleep(0.01)
-		sys.stdout.write("Đã kiểm tra "+str(nums)+" viên đạn\r")
+		sys.stdout.write("Đã kiểm tra "+str(nums)+" proxy\r")
 		sys.stdout.flush()
 	for th in list(thread_list):
 		th.join()
-		sys.stdout.write("Đã kiểm tra "+str(nums)+" viên đạn\r")
+		sys.stdout.write("Đã kiểm tra "+str(nums)+" proxy\r")
 		sys.stdout.flush()
-	print("\r\nKiểm tra đạn xong, Số đạn xịn:"+str(len(proxies)))
+	print("\r\nKiểm tra proxy xong, Số proxy xịn:"+str(len(proxies)))
 	with open("socks5.txt", 'wb') as fp:
 		for lines in list(proxies):
 			fp.write(bytes(lines,encoding='utf8'))
