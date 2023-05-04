@@ -185,7 +185,7 @@ def clone():
     except:
         pass
     try:
-        r = requests.get("https://github.com/roosterkid/openproxylist/blob/main/SOCKS5_RAW.txt")
+        r = requests.get("https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt")
         f.write(r.content)
     except:
         pass
