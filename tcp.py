@@ -1,7 +1,8 @@
 # DDOS TCP
 # v.1
 
-import socket, requests
+import socket
+import requests
 import random
 import threading
 
