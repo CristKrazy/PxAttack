@@ -277,9 +277,9 @@ def main():
         port = int(port)
     if port == 443:
         print("Port 443 Has Been Selected")
-    th_num = str(input("Threads(default=300):"))
+    th_num = str(input("Threads(default=1500):"))
     if th_num == "":
-        th_num = int(300)
+        th_num = int(1500)
     else:
         th_num = int(th_num)
     #if mode == "get" or mode == "GET":
