@@ -19,9 +19,9 @@ useragents=["Mozilla/5.0 (Android; Linux armv7l; rv:10.0.1) Gecko/20100101 Firef
 "Mozilla/5.0 (Windows; U; ; en-NZ) AppleWebKit/527  (KHTML, like Gecko, Safari/419.3) Arora/0.8.0",
 "Mozilla/5.0 (Windows; U; Win98; en-US; rv:1.4) Gecko Netscape/7.1 (ax)",
 "Mozilla/5.0 (Windows; U; Windows CE 5.1; rv:1.8.1a3) Gecko/20060610 Minimo/0.016"]
-ref=['http://www.bing.com/search?q=',
-'https://www.yandex.com/yandsearch?text=',
-'https://duckduckgo.com/?q=']
+ref=['http://www.bing.com/search?q=",
+"https://www.yandex.com/yandsearch?text=",
+"https://duckduckgo.com/?q=",]
 acceptall=["Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\n",
 "Accept-Encoding: gzip, deflate\r\n",
 "Accept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\n",
